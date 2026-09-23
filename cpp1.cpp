@@ -5,7 +5,7 @@ int main () {
     int n;
     cin >> n;
     int fact = 1;
-    for(int i=1;i<=n;i++){
+    for(int i=1;i*i<=n;i++){
          fact = fact *i;
     }
     cout << fact;
