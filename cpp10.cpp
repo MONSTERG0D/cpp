@@ -12,11 +12,11 @@ int main (){
       cin >> base;
     int temp = 1;
     if (base == 0 ){
-        cout << "1" <<endl;
+        cout << num << "is power of" << "1" << "base is" << base << endl;
         return 0;
     }
     if (base == 1 ){
-        cout << num << endl;
+        cout << num << "is power of" << base << endl;
         return 0;
     }
     if ( base <= 1){
@@ -25,14 +25,13 @@ int main (){
     }
 
    
-    while (base <=num){
-        base = base*temp;
-        temp ++;
+    while (temp <num){
+        temp = base*temp;
         pow++;
         
 
        
-       if (base == num){
+       if (temp == num){
        cout << num << "is power of " << base << endl;
        cout << "power" << pow <<endl;
        return 0;
